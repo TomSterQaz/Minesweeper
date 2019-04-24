@@ -56,6 +56,7 @@ class Tile:
                 self.image = pyglet.image.load('assets/revealed.png')
                 self.tileSprite = pyglet.sprite.Sprite(self.image, self.x, self.y)
         else:
+            self.flagged = False
             self.image = pyglet.image.load('assets/concealed.png')
             self.tileSprite = pyglet.sprite.Sprite(self.image, self.x, self.y)
 
